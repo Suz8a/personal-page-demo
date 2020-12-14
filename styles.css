@@ -112,6 +112,23 @@ h2 {
   background-color: rgb(56, 76, 105);
   transform: translateY(-25px);
 }
+#contact {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-link {
+  width: 100px;
+  height: 100px;
+  transition: 0.2s linear;
+  border-radius: 50%;
+}
+
+#contact-link:hover {
+  transform: scale(1.2);
+}
 
 @media screen and (max-width: 600px) {
   #projects-container {
