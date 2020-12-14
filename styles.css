@@ -26,6 +26,7 @@ nav {
   padding-right: 5%;
   left: 0;
   top: 0;
+  z-index: 100;
 }
 
 a {
@@ -99,9 +100,9 @@ h2 {
   background-color: rgb(101, 131, 175);
   border-radius: 10px;
   overflow: hidden;
-  transition: all 0.2s linear;
+  transition: 0.2s linear;
 }
-#project-title {
+.project-tile {
   margin: 10px;
   text-align: center;
   height: 10%;
@@ -110,4 +111,20 @@ h2 {
 .project-link:hover {
   background-color: rgb(56, 76, 105);
   transform: translateY(-25px);
+}
+
+@media screen and (max-width: 600px) {
+  #projects-container {
+    flex-direction: column;
+  }
+  #main-container {
+    flex-direction: column;
+  }
+  #profile-photo {
+    height: 30vh;
+    width: 80vw;
+  }
+  #info {
+    margin: 15vh auto 5vh auto;
+  }
 }
